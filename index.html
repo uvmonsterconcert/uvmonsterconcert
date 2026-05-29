@@ -1,176 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utah Valley Monster Concert 2026</title>
-    <style>
-        .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #4A90E2;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    margin: 10px;
-    font-weight: bold;
-}
+<style>
+    body {
+        font-family: Georgia, serif;
+        font-size: 20pt;
+        margin: 0;
+        padding: 0;
+        background-color: #fbfbf9;
+        color: #4B4E55;
+    }
 
-.btn:hover {
-    background-color: #357ABD;
-}
-        /* Basic CSS for styling */
-        body {
-            font-family: Georgia, serif; /* Changed font family */
-            font-size: 20pt; /* Changed font size */
-            margin: 0;
-            padding: 0;
-            background-color: #fbfbf9; /* Changed background color */
-            color: #4B4E55; /* Changed text color */
-        }
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
 
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 
-        h2 {
-            color: #A34816; /* Changed heading color */
-            font-family: Georgia, serif; /* Changed heading font family */
-            font-size: 36pt;
-            text-align: center;
-            position: relative; /* Added position relative */
-            margin-top: 20px; /* Added margin-top */
-        }
+    h2 {
+        color: #A34816;
+        font-family: Georgia, serif;
+        font-size: 36pt;
+        text-align: center;
+        position: relative;
+        margin-top: 30px;
+    }
 
-        h2:before {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            width: 100px; /* Adjust as needed */
-            height: 2px;
-            background-color: #A34816; /* Added line color */
-            transform: translateX(-50%);
-        }
+    h2:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        width: 100px;
+        height: 2px;
+        background-color: #A34816;
+        transform: translateX(-50%);
+    }
 
-        p {
-            margin-bottom: 20px;
-        }
+    p {
+        margin-bottom: 20px;
+    }
 
-        .btn {
-            display: inline-block;
-            width: 200px;
-            margin: 10px; /* Added margin */
-            padding: 10px;
-            text-align: center;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        margin: 10px;
+        background-color: #007bff;
+        color: white !important;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+    }
 
-        .btn:hover {
-            background-color: #0056b3;
-        }
+    .btn:hover {
+        background-color: #0056b3;
+    }
 
-        /* Style for horizontal line */
-        .horizontal-line {
-            margin-top: 20px;
-            border-top: 12px solid #746F64;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    .horizontal-line {
+        margin-top: 20px;
+        border-top: 12px solid #746F64;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        /* Style for iframe containers */
-        .iframe-container {
-            margin-top: 40px; /* Added margin */
-            width: 850px; /* Set width */
-            height: 600px; /* Set height */
-            margin: 0 auto; /* Center horizontally */
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="mc-logo.png" alt="Utah Valley Monster Concert Logo" style="max-width: 100%;">
-        <!-- Horizontal line -->
-        <div class="horizontal-line"></div>
-        
-        <h2>Monster Concert Location</h2>
-        <p>University Place Mall, 575 East University Parkway, Orem</p>
+    .iframe-container {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 850px;
+        height: auto;
+    }
 
-        <h2>Date</h2>
-        <p>Saturday, October 31, 2026</p>
+    .iframe-container iframe {
+        max-width: 100%;
+    }
 
-        <h2>Time</h2>
-        <p>There will be four concerts to choose from: 1:00, 2:00, 3:00, or 4:00. All student participants receive a Monster Concert T-shirt.</p>
+    .sponsor-logos {
+        text-align: center;
+        margin-top: 20px;
+    }
 
-        <h2>Group Rehearsals</h2>
-        <p>Rehearsals for all pieces will be held on Thursday, October 29 from 5:00-9:00pm at Brigham Larson Pianos (1497 S State St, Orem, UT). Students will be assigned a 15-minute time window during this time for rehearsal.</p>
+    .sponsor-logos img {
+        max-width: 280px;
+        width: 100%;
+        height: auto;
+        margin: 0 25px 25px 25px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+</style>
+    <div class="horizontal-line"></div>
 
-        <h2>Registration</h2>
-        <p>Registration deadline: September 30, 2026</p>
-        <p>Teachers: Please register yourself first. After you receive your successful registration confirmatoin, (which could take up to 24 hours) you may then send a link to your students to register for the concert of their choice.</p>
-        <p>Students: Thank you for participating in the 2026 Utah Valley Monster Concert. After your teacher has registered, you may register for the 2026 Monster Concert. The form must be completed and payment received to be registered for the concert.</p>
-        <p>Click on links below</p>
+    <h2>Monster Concert Location</h2>
+    <p>University Place Mall, 575 East University Parkway, Orem</p>
+
+    <h2>Date</h2>
+    <p>Saturday, October 31, 2026</p>
+
+    <h2>Time</h2>
+    <p>There will be four concerts to choose from: 1:00, 2:00, 3:00, or 4:00. All student participants receive a Monster Concert T-shirt.</p>
+
+    <h2>Group Rehearsals</h2>
+    <p>Rehearsals for all pieces will be held on Thursday, October 29 from 5:00-9:00pm at Brigham Larson Pianos (1497 S State St, Orem, UT). Students will be assigned a 15-minute time window during this time for rehearsal.</p>
+
+    <h2>Registration</h2>
+    <p>Registration deadline: September 30, 2026</p>
+    <p>Teachers: Please register yourself first. After you receive your successful registration confirmation, which could take up to 24 hours, you may then send a link to your students to register for the concert of their choice.</p>
+    <p>Students: Thank you for participating in the 2026 Utah Valley Monster Concert. After your teacher has registered, you may register for the 2026 Monster Concert. The form must be completed and payment received to be registered for the concert.</p>
+    <p>Click on links below</p>
+
+    <p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScSD-ZoPYZC4ydJx0Bpfpp90sZAANPU6T_Jc0N1ZAeG6PuJQg/viewform?usp=header" class="btn">Teacher Registration</a>
 
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcaTOTZdmk00y7K8UsnnQtxwwAzIj31l4Fxg03aoZ25yHWJKA/viewform?usp=header" class="btn">Student Registration</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScSD-ZoPYZC4ydJx0Bpfpp90sZAANPU6T_Jc0N1ZAeG6PuJQg/viewform?usp=header" class="btn">Teacher Registration</a>
-        
-        <h2>Repertoire Choices</h2>
-        <p>Please find links below to the repertoire selections for the 2026 Monster Concert</p>
+    </p>
 
-        <!-- Google Sheet iframe container -->
-        <div class="iframe-container">
-            <iframe width="850" height="600" src="https://docs.google.com/spreadsheets/d/1UdnIXB_sTj7En2mp9fED9IrhYSIFO2PxhEfHRRa35dY/edit?gid=0#gid=0"
-        </div>
+    <h2>Repertoire Choices</h2>
+    <p>Please find links below to the repertoire selections for the 2026 Monster Concert</p>
 
-        <!-- YouTube video iframe container -->
-        <div class="iframe-container" style="height:auto; margin-bottom:20px;">
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/WJdo8haJba0"
-        frameborder="0"
-        allowfullscreen></iframe>
+    <div class="iframe-container">
+        <iframe width="850" height="600" src="https://docs.google.com/spreadsheets/d/1UdnIXB_sTj7En2mp9fED9IrhYSIFO2PxhEfHRRa35dY/edit?gid=0#gid=0"></iframe>
+    </div>
+
+    <div class="iframe-container" style="margin-bottom:20px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WJdo8haJba0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h2>We'd like to thank our sponsors!</h2>
+
+    <div class="sponsor-logos">
+        <img src="UP blue logo.png" alt="University Place Logo">
+
+        <img src="New Logo- BLP.png" alt="Brigham Larson Pianos">
+
+        <img src="OremCare.webp" alt="Orem Care">
+
+        <img src="UMTA Logo Gradient CMYK Medium.jpeg" alt="UMTA Logo">
+    </div>
+
+    <p>Please contact <a href="mailto:timpumta@gmail.com">timpumta@gmail.com</a> with any questions.</p>
 </div>
-        <div>
-        <style>
-            /* Ensure the image is responsive */
-            img {
-                max-width: 100%;
-                height: auto;
-                display: block;
-                margin: 0 auto;
-            }
-/* Sponsor logos */
-.sponsor-logos img {
-    max-width: 280px;
-    width: 100%;
-    height: auto;
-    margin: 0 25px 25px 25px;
-    display: inline-block;
-    vertical-align: middle;
-}
-</style>
-
-<h2>We'd like to thank our sponsors!</h2>
-
-<div class="sponsor-logos">
-    <img src="UP blue logo.png" alt="University Place Logo">
-
-    <img src="New Logo- BLP.png" alt="Brigham Larson Pianos">
-
-    <img src="OremCare.webp" alt="Orem Care">
-
-    <img src="UMTA Logo Gradient CMYK Medium.jpeg" alt="UMTA Logo">
-</div>
-        </div>  
-        <!-- Contact information -->
-         <p>Please contact <a href="mailto:timpumta@gmail.com">timpumta@gmail.com</a> with any questions.</p>
-        </div>
-    </body>
-    </html>
