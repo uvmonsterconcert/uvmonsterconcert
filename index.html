@@ -117,9 +117,12 @@
         </div>
 
         <!-- YouTube video iframe container -->
-        <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WJdo8haJba0" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="iframe-container" style="height:auto; margin-bottom:20px;">
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/WJdo8haJba0"
+        frameborder="0"
+        allowfullscreen></iframe>
+</div>
         <div>
         <style>
             /* Ensure the image is responsive */
@@ -130,14 +133,27 @@
                 margin: 0 auto;
             }
         </style>
-    <h2>We'd like to thank our sponsors!</h2>
-        <img src="UP blue logo.png" alt="University Place Logo" style="max-width:600px; width:100%; height:auto;">
+    .sponsor-logos img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    margin: 0 25px 25px 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+</style>
 
-        <img src="New Logo- BLP.png" alt="Brigham Larson Pianos" style="max-width:600px; width:100%; height:auto;">
-            
-        <img src="OremCare.webp" alt="Orem Care" style="max-width:600px; width:100%; height:auto;">   
+<h2>We'd like to thank our sponsors!</h2>
 
-        <img src="UMTA Logo Gradient CMYK Medium.jpeg" alt="UMTA Logo" style="max-width:600px; width:100%; height:auto;">
+<div class="sponsor-logos">
+    <img src="UP blue logo.png" alt="University Place Logo">
+
+    <img src="New Logo- BLP.png" alt="Brigham Larson Pianos">
+
+    <img src="OremCare.webp" alt="Orem Care">
+
+    <img src="UMTA Logo Gradient CMYK Medium.jpeg" alt="UMTA Logo">
+</div>
         </div>  
         <!-- Contact information -->
          <p>Please contact <a href="mailto:timpumta@gmail.com">timpumta@gmail.com</a> with any questions.</p>
